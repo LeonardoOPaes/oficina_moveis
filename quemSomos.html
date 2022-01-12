@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ced424d74.js" crossorigin="anonymous"></script>
+    <title>Quem somos</title>
+</head>
+<body>
+    <header>
+        <div class="containerHeaderPrincipal">
+          <div class="containerHeader">
+            <a href="index.html" class="logoHeader">Oficina Móveis</a>
+            <nav>
+              <a href="produtos.html" class="linkPrincipal">Produtos</a>
+              <a href="quemSomos.html" class="linkPrincipal">Quem Somos</a>
+            </nav>
+          </div>
+        </div>
+        <section class="descricao">
+              <h1>Sobre Nós</h1>
+        </section>
+      </header>
+
+      <section class="containerSobreNos">
+        <div class="divSobreNos">
+            <div class="descricaoSobreNos">
+                <h2 id="frase">Empresa</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <div class="redes">
+                  <ul class="ul-redes">
+                    <div class="redes-icon">
+                      <a href="https://www.facebook.com/djleonardo.paes.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="redes-icon">
+                      <a href="https://www.instagram.com/leonardopaeslp/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <div class="redes-icon">
+                      <a href="https://www.linkedin.com/in/leonardo-paes-668a55207" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="redes-icon">
+                      <a href="https://github.com/LeonardoOPaes" target="_blank"><i class="fab fa-github-square"></i></a>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+            <div class="fotoSobreNos">
+                <img src="img/teste.jpg">
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-footer">
+          <div class="nome">
+            <p><span>Site</span> elaborado por Leonardo de Oliveira Paes</p>
+          </div>
+          <div class="redes">
+            <ul class="ul-redes">
+              <div class="redes-icon">
+                <a href="https://www.facebook.com/djleonardo.paes.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              </div>
+              <div class="redes-icon">
+                <a href="https://www.instagram.com/leonardopaeslp/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+              </div>
+              <div class="redes-icon">
+                <a href="https://www.linkedin.com/in/leonardo-paes-668a55207" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <div class="redes-icon">
+                <a href="https://github.com/LeonardoOPaes" target="_blank"><i class="fab fa-github-square"></i></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        const titulo = document.querySelector('#frase')
+        function escrever(elemento) {
+          const textoArray = elemento.innerHTML.split('')
+          elemento.innerHTML = ''
+          textoArray.forEach( function(letra, i) {
+            setTimeout(() => elemento.innerHTML += letra, 75 * i)
+          });
+        }
+        escrever(titulo)
+      </script>
+</body>
+</html>

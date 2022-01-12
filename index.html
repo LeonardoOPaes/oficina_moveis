@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0ced424d74.js" crossorigin="anonymous"></script>
+  <title>Página Inicial</title>
+</head>
+
+<body>
+  <header>
+    <div class="containerHeaderPrincipal">
+      <div class="containerHeader">
+        <a href="index.html" class="logoHeader">Oficina Móveis</a>
+        <nav>
+          <a href="produtos.html" class="linkPrincipal">Produtos</a>
+          <a href="quemSomos.html" class="linkPrincipal">Quem Somos</a>
+        </nav>
+      </div>
+    </div>
+    <section class="descricao">
+      <h1>Modernidade</h1>
+      <p>Moveis para Interiores</p>
+      <a href="produtos.html"><button class="btnProdutos">Produtos</button></a>
+    </section>
+  </header>
+
+  <section class="containerTexto">
+    <div class="divTexto">
+      <h2 id="frase">Sua casa com mais conforto</h2>
+    </div>
+  </section>
+  <section class="containerAmbiente">
+    <h1>Ambientes</h1>
+    <article class="fotosAmbientes">
+      <div class="card1">
+        <h2 class="titulosAmbientes">Sala de Estar</h2>
+        <img src="img/sala.jpg" alt="">
+      </div>
+      <div>
+        <h2 class="titulosAmbientes">Estudos</h2>
+        <img src="img/estudos.jpg" alt="">
+      </div>
+      <div>
+        <h2 class="titulosAmbientes">Cozinha</h2>
+        <img src="img/cozinha.jpg" alt="">
+      </div>
+    </article>
+  </section>
+
+  <section class="containerProdutos">
+    <h1>Produtos</h1>
+    <article class="fotosProdutos">
+      <div>
+        
+        <img src="img/1.jpg" alt="">
+        <h2 class="titulosProdutos">Armários</h2>
+      </div>
+      <div>
+        
+        <img src="img/2.jpg" alt="">
+        <h2 class="titulosProdutos">Mesas</h2>
+      </div>
+      <div>
+        
+        <img src="img/3.jpg" alt="">
+        <h2 class="titulosProdutos">Camas</h2>
+      </div>
+      <div>
+        
+        <img src="img/4.jpg" alt="">
+        <h2 class="titulosProdutos">Cadeiras</h2>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div class="container-footer">
+      <div class="nome">
+        <p><span>Site</span> elaborado por Leonardo de Oliveira Paes</p>
+      </div>
+      <div class="redes">
+        <ul class="ul-redes">
+          <div class="redes-icon">
+            <a href="https://www.facebook.com/djleonardo.paes.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          </div>
+          <div class="redes-icon">
+            <a href="https://www.instagram.com/leonardopaeslp/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          </div>
+          <div class="redes-icon">
+            <a href="https://www.linkedin.com/in/leonardo-paes-668a55207" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="redes-icon">
+            <a href="https://github.com/LeonardoOPaes" target="_blank"><i class="fab fa-github-square"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const titulo = document.querySelector('#frase')
+    function escrever(elemento) {
+      const textoArray = elemento.innerHTML.split('')
+      elemento.innerHTML = ''
+      textoArray.forEach( function(letra, i) {
+        setTimeout(() => elemento.innerHTML += letra, 100 * i)
+      });
+    }
+    escrever(titulo)
+  </script>
+
+</body>
+
+</html>
